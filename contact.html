@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Ali almuneea - Contact</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="contact">
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    RESUME
+                </a>
+            </li>
+            <li>
+                <a href="interests.html">
+                    INTERESETS
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    CONTACT
+                </a>
+            </li>
+            <li>
+                <a href="cv.pdf">
+                    DOWNLOAD
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <h1>CONTACT ME</h1>
+        <p>ali ibrahim almuneea</p>
+        <h2>My EMail Address</h2>
+        <a href="mailto:alisa6600@outlook.sa">alisa6600@outlook.sa</a>
+        <h2>Contact Form</h2>
+        <form>
+            <label >Your Name</label>
+            <br>
+            <input type="text" name="your-name" id="your-name" />
+            <br>
+            <label >Your e-mail</label>
+            <br>
+            <input type="email" name="your-email" id="your-email">
+            <br>
+            <label >Your Message</label>
+            <br>
+            <textarea name="your-message" id="your-message" cols="30" rows="10"></textarea>
+            <br>
+            <button type="button" onclick="send()">Send</button>
+        </form>
+
+        <script>
+            function send() {
+                var name = document.getElementById("your-name").value;
+                var email = document.getElementById("your-email").value;
+                if (name == "") {
+                    alert("Please enter your name");
+                }
+                if (email == "") {
+                    alert("Please enter your email");
+                }
+                
+                document.writeln("Your message was sent successfully");
+            }
+        </script>
+    </body>
+</html>
